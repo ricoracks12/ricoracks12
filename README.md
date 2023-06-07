@@ -1,0 +1,13 @@
+- 👋 Hi, I’m @ricoracks12
+- 👀 I’m interested in ...
+- 🌱 I’m currently learning ...
+- 💞️ I’m looking to collaborate on ...
+- 📫 How to reach me ...
+
+<!---
+ricoracks12/ricoracks12 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+--->
+curl -X POST https://api.stripe.com/v1/payouts/{{PAYOUT_ID}}/reverse \
+  -u "sk_test_51NBovlBNKFZdPIg65QxUfJ7LWUeO7z2lfuduJyd0BEdarQWb9CUT8SOGSFO6nMFN2H1BRVbOOI4w1BezfF7ZyHAl00rgYGbiem:" \
+  -H "Stripe-Account: {{CONNECTED_ACCOUNT_ID}}"
